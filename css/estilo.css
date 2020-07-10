@@ -1,0 +1,269 @@
+*{
+  margin: 0; padding: 0; box-sizing: border-box; /*atributo para considerar los bordes y padding como parte del ancho del elemento*/
+}
+/*BARRAS DE NAVEGACION*/
+.navbar {
+      margin-bottom: 0;
+      background-color: #1AA59A;/*Color barra*/
+      z-index: 9999;
+      border: 0;
+      font-size: 17px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important; /*Color de la letra de la barra*/
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: black !important;/*Color de letra al poner el cursor*/
+      background-color: #F5DA81 !important;/* Color al poner el cursor*/
+  }
+  /*SECCION COMPLETA*/
+  #principal{
+    margin: auto;
+    width: 90%;
+    opacity: 0.95;
+  }
+  /*CONFIGURACION CARRUSEL DE FOTOS*/
+
+  img:hover{
+  border-radius:50%;
+  -webkit-border-radius:8%;
+  box-shadow: 0px 0px 15px 15px black;
+  -webkit-box-shadow: 0px 0px 15px 15px white;
+  }
+  .imagen:hover {filter: saturate(180%);}
+
+
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #F5DA81;
+  }
+   .carousel-indicators li {
+      border-color: black;/*Contorno circulos*/
+  }
+  .carousel-indicators li.active {
+      background-color: #F5DA81;/*Color circulos*/
+  }
+  #carrusel{
+    margin-top: 110px;
+    padding: 30px;
+    background-color: #227066;
+    min-height: 600px;
+  }
+  #image{
+    margin: auto;
+  }
+  h2{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+  }
+  /*CONFIGURAR VIDEO*/
+  #miVideo{
+    width: 100%;
+    border:2px solid red;
+    opacity: 1;
+  }
+  /*CONFIGURAR SECCION APLICACIONES*/
+  #aplicaciones{
+    padding: 30px;
+    min-height: 500px;
+    background-color: #227066;
+  }
+  p{
+    color: white;
+    font-size: 30px;
+    margin-left: 110px;
+  }
+  #zona1{
+        width:28%;
+        height:95%;
+        margin: 0 1% 1% 0;
+        float: left;
+        margin-left: 122px;
+      }
+  #zona2{
+        width:28%;
+        height:95%;
+        float: left;
+      }
+  #zona3{
+        width:28%;
+        height:95%;
+        margin: 0 0 1% 0;
+        float: left;
+      }
+  /*CONFIGURAR REGISTRO*/
+  #registro{
+    min-height: 350px;
+    background-color: #F5DA81;
+  }
+  #letra{
+    color: black;
+  }
+  h3{
+    text-align: center;
+    font-size: 30px;
+  }
+  #texto1{
+    font-size: 24px;
+    color: black;
+    margin-top: 60px;
+  }
+  #contenido{
+    width: 30%;
+    float: left;
+    background-color: white;
+    min-height: 250px;
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+  #ingreso{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  #nombreTxt{
+    margin-left: 20px;
+  }
+  #correoTxt{
+    margin-left: 26px; 
+  }
+  #boton{
+    float: right;
+  }
+
+  /*CONFIGUARCION FOOTER**/
+  footer{
+    width: 100%;
+    min-height: 150px;
+    background-color: #1AA59A;
+  }
+  #redes{
+    color: white;
+    text-align: left;
+    font-size: 40px;
+    margin-left: 40px;
+    margin-right: 150px;
+    float: left;
+  }
+ 
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+/*Reglas para dispositivos medianos como tableta*/
+@media screen and (min-width: 461px) and (max-width: 1280px){
+  #carrusel{
+    padding: 30px;
+    min-height: 300px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  #aplicaciones{
+    padding: 30px;
+    min-height: 450px;
+  }
+  p{
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+  }
+  #tam{
+    width: 110px;
+    height: 110px;
+  }
+  #zona1{
+    margin-left: 50px;
+  }
+  #letra{
+    font-size: 25px;
+  }
+   #nombreTxt{
+    margin-left: 15px;
+  }
+  #correoTxt{
+    margin-left: 15px; 
+  }
+  #contenido{
+    width: 80%;
+    min-height: 150px;
+  }
+  #red{
+    font-size: 15px;
+
+  }
+  #redes{
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 40px;
+    float: left;
+  }
+  footer{
+    min-height: 100px;
+  }
+  li{
+    font-size: 15px;
+  }
+  #logo{
+    height: 70px;
+    width: 70px;
+  }
+}
+
+/*Reglas para dispositivos pequeños como celular*/
+@media screen and (max-width: 460px){
+  #principal{
+    opacity: 0.95;
+  }
+  #carrusel{
+    padding: 30px;
+    min-height: 220px;
+  }
+  h2{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+  }
+  #aplicaciones{
+    padding: 30px;
+    min-height: 400px;
+  }
+  p{
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  #tam{
+    width: 50px;
+    height: 50px;
+  }
+  #zona1{
+        margin-left: 20px;
+      }
+  #letra{
+    font-size: 25px;
+  }
+   #nombreTxt{
+    margin-left: 15px;
+  }
+  #correoTxt{
+    margin-left: 15px; 
+  }
+  #contenido{
+    width: 80%;
+  }
+  #texto{
+    display: none;
+  }
+  #redes{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 15px;
+    float: left;
+  }
+
+}

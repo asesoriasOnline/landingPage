@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+  	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+  	<script>
+  		function registrar(){
+  			alert("Ha sido Registrado");
+  	}
+  	</script>
+
+  	<script language="JavaScript">  var estado=true;  setTimeout("ver()",100);  function ver (){  estado=!estado;  if(estado==true)  texto1.style.visibility="visible";  else  texto1.style.visibility="hidden";  setTimeout("ver()",1200);  }  </script>
+
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+  	<div class="container">
+    <div class="navbar-header">
+      	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        	<span class="icon-bar"></span>
+        	<span class="icon-bar"></span>
+        	<span class="icon-bar"></span>                        
+      	</button>
+      	<a class="navbar-brand" href="#myPage"><img id="logo" src="img/logo.png"  height="100" width="100";></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      	<ul class="nav navbar-nav navbar-right">
+        	<li><a href="#carrusel">Asesorías</a></li>
+        	<li><a href="#miVideo">¿Quienes Somos?</a></li>
+        	<li><a href="#aplicaciones">Aplicaciones</a></li>
+        	<li><a href="#registro">Registrate</a></li>
+      	</ul>
+    </div>
+  	</div>
+	</nav>
+
+	<section id="principal" class="contenedor">
+							<!--Seccion Carrusel de Fotos-->
+		<section id="carrusel">
+			<h2><strong>Asesorías Online</strong></h2>
+			<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    								<!-- Indicadores -->
+    			<ol class="carousel-indicators">
+      				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      				<li data-target="#myCarousel" data-slide-to="1"></li>
+      				<li data-target="#myCarousel" data-slide-to="2"></li>
+    			</ol>
+
+				<article class="carousel-inner imagen">
+					<figure class="item active">
+						<img src="img/uni6.png" alt="asesoria" width="70%" id="image">
+						<div class="carousel-caption"></div>
+					</figure>
+					<figure class="item">
+						<img src="img/universidad.png" alt="asesoria" width="70%" id="image">
+						<div class="carousel-caption"></div>
+					</figure>
+					<figure class="item">
+						<img src="img/prepa.png" alt="asesoria" width="70%" id="image">
+						<div class="carousel-caption"></div>
+					</figure>
+				</article>
+
+		 	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      			<span class="sr-only">Previous</span>
+    		</a>
+   	 		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      			<span class="sr-only">Next</span>
+   			 </a>
+			</div>
+		</section>
+			<br>
+							<!--Seccion Video-->
+		<video autoplay muted loop id="miVideo">
+ 			<source src="video/video.mp4" type="video/mp4">
+		</video>	
+		<br><br>
+							<!--Seccion Aplicaciones-->
+		<section id="aplicaciones">
+			<h2><strong>Herramientas para tus Videoconferencias</strong></h2>
+			<p>Tratamos de agilizar el método de enseñanza a travéz de estas aplicaciones gratuitas.</p>
+			<p>Alumno!!! Para tomar tus asesorías solo debes contar con estas aplicaciones.</p>
+			<section id="zona1"><img src="img/skype.png" width="200" height="200" id="tam"></section>
+			<section id="zona2"><img src="img/hangouts.png" width="200" height="200" id="tam"></section>
+			<section id="zona3"><img src="img/zoom.png" width="200" height="200" id="tam"></section>
+		</section>
+							<!--Seccion Registrarse-->
+		<section id="registro">
+			<h2 id="letra"><strong>Registrate y empieza tus Asesorías</strong></h2>
+				<section id="contenido">
+					<div align="center"><font color="#FFFFFF" size="+3"><marquee bgcolor="#227066" direction="right" loop="20"><strong>Registrate</strong></marquee></font></div>
+					<label id="ingreso"><strong>Nombre:</strong></label> <input type="text" id="nombreTxt" placeholder="nombre completo"> <br>
+					<label id="ingreso"><strong>Correo:</strong></label> <input type="text" id="correoTxt" placeholder="ingresa tu correo"> <br>
+					<input type="button" value="Enviar" onclick="registrar();" id="boton">
+				</section>
+				<section id="texto">
+					<p align="center" id="texto1"  style="visibility:visible"><font face="Arial, Helvetica,  sans-serif size="3"">Registrate!!! Y obten hasta un 50% de descuento en tu primer asesoría.<br>Además conoce nuestras ofertas dentro de nuestro sitio web.</font></p>
+				</section>
+		</section>
+	</section><br>
+
+	<footer>
+		<h2 id="redes"><strong>Redes Sociales</strong></h2>
+		<p id="red"><img src="img/Facebook.png" width="40" height="40">Facebook: Asesorías Online</p>
+		<p id="red"><img src="img/Instagram.png" width="40" height="40">Instagram: @desingmultisystem</p>
+	</footer>
+			
+
+</body>
+</html>
